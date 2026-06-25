@@ -22,3 +22,4 @@ int main() {
 
     return 0;
 }
+//all the three functions such as top(),push(),pop(); the time complexity is O(1)
