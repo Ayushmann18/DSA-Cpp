@@ -15,9 +15,11 @@ int main(){
     vec.erase(vec.begin()+2);
     vec.insert(vec.begin()+2,100);
     int largest = *max_element(vec.begin(),vec.end());
-    int smallest = *min_element(vec.begin(),vec.end());
+    int smallest = *min_element(vec.begin(),vec.end()); /*vec.end is the last element in a vector whether
+it is a garbage value or a value in this case its a garbage value because there is nothing in the last 
+index*/
 
-   // vec.clear();
+   // vec.clear();clears all the values in a vector
     //vector<int>vec2(vec1); this will add all elements of vec1 in vec2
     for(int val : vec){
         cout<< val <<" ";
@@ -30,7 +32,7 @@ int main(){
       cout<<"Smallest Number : "<<smallest<<endl;
 
     
-    /*cout<<vec.size()<<endl;
+/*cout<<vec.size()<<endl;
     cout<<vec.capacity()<<endl;*/
     return 0;
 }
