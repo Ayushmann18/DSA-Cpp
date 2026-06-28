@@ -7,7 +7,7 @@ int DecToBin(int n){
         n /= 2;
 
         ans += (rem * pow);
-        pow *=10;
+        pow *= 10;
     }
     return ans;//binary number
 }

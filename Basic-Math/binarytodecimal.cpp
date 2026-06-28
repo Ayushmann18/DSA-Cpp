@@ -7,7 +7,7 @@ int BinaryToDec(int n){
         ans += rem*pow;
 
         n /= 10;
-        pow *=2; 
+        pow *= 2; 
 
     }
      return ans;
