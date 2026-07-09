@@ -19,3 +19,4 @@ int main(){
     cout<<"Second Largest Number in an array : "<<secondLargest<<endl;
     return 0;
 }
+//time complexity = O(n)

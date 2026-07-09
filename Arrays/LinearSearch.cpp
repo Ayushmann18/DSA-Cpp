@@ -14,5 +14,5 @@ int main(){
     int target = 8;
     cout<<linearSearch(arr, sz, target)<<endl;
     return 0;
-
 }
+//time complexity = O(n)
