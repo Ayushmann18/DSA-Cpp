@@ -30,3 +30,5 @@ int main(){
     cout<<"No pair found!"<<endl;
     return 0;
 }
+//time complexity : O(n)
+//space complexity : O(1)

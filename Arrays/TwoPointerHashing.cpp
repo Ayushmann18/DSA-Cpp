@@ -1,4 +1,5 @@
 #include <iostream>
+#include <unordered_map>
 using namespace std;
 
 int main()
@@ -19,20 +20,22 @@ int main()
     cout << "Enter target: ";
     cin >> target;
 
+    unordered_map<int, int> mp;
+
     for (int i = 0; i < n; i++)
     {
-        for (int j = i + 1; j < n; j++)
+        int second = target - arr[i];
+
+        if (mp.find(second) != mp.end())
         {
-            if (arr[i] + arr[j] == target)
-            {
-                cout << "Indices: " << i << " " << j;
-                return 0;
-            }
+            cout << "Indices: " << mp[second] << " " << i;
+            return 0;
         }
+
+        mp[arr[i]] = i;
     }
 
     cout << "No pair found";
 
     return 0;
 }
-//time complexity : O(n^2)
