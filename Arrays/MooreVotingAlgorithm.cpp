@@ -1,23 +1,18 @@
 #include <iostream>
 using namespace std;
-
 int main()
 {
     int n;
     cout << "Enter the size of the array: ";
     cin >> n;
-
     int arr[n];
-
     cout << "Enter the array elements: ";
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
-
     int count = 0;
     int candidate;
-
     // Find the candidate
     for (int i = 0; i < n; i++)
     {
@@ -25,7 +20,6 @@ int main()
         {
             candidate = arr[i];
         }
-
         if (arr[i] == candidate)
         {
             count++;
@@ -35,10 +29,8 @@ int main()
             count--;
         }
     }
-
     // Verify the candidate
     count = 0;
-
     for (int i = 0; i < n; i++)
     {
         if (arr[i] == candidate)
@@ -46,7 +38,6 @@ int main()
             count++;
         }
     }
-
     if (count > n / 2)
     {
         cout << "Majority Element = " << candidate;
@@ -55,6 +46,5 @@ int main()
     {
         cout << "No Majority Element Found";
     }
-
     return 0;
 }
