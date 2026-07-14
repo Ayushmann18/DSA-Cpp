@@ -6,7 +6,6 @@ int main()
     int n;
     cout << "Enter size of array: ";
     cin >> n;
-
     int arr[n];
     cout << "Enter array elements: ";
     for (int i = 0; i < n; i++)
@@ -17,11 +16,9 @@ int main()
     cout << "Enter target: ";
     cin >> target;
     unordered_map<int, int> mp;
-
     for (int i = 0; i < n; i++)
     {
         int second = target - arr[i];
-
         if (mp.find(second) != mp.end())
         {
             cout << "Indices: " << mp[second] << " " << i;
