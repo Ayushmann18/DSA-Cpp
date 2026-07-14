@@ -1,9 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
-    double x;
-    int n;
-    cin >> x >> n;
+    double x = 2;
+    int n = 10;
     long long power = n;
     if (power < 0) {
         x = 1 / x;
