@@ -29,3 +29,5 @@ int main(){
     }
     return 0;
 }
+//Time complexity : O(n^3);
+//Space complexity : O(1);
