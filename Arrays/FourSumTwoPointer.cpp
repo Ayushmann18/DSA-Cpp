@@ -41,3 +41,5 @@ int main() {
 
     return 0;
 }
+//time complexity : O(n^3)
+//Space complexity : O(1)
