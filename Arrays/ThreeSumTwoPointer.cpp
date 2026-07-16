@@ -10,7 +10,7 @@ int main(){
         cin>>nums[i];
     }
     sort(nums.begin(), nums.end());
-    vector<vector<int>> ans;
+    vector<vector<int>> ans;//vector of vector or 2-D vector because ans is like {a,b} is 2-D
     for(int i = 0; i<n; i++){
         if(i > 0 && nums[i] == nums[i-1]) continue;
         int j = i+1, k = n-1;
