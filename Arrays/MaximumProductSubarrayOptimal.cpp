@@ -26,3 +26,5 @@ int main() {
     cout<<ans;
     return 0;
 }
+//time complexity : O (n)
+//Space complexity : O(1) 
