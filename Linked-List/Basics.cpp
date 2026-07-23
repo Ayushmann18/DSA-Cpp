@@ -19,7 +19,7 @@ class List{
     List(){
         head = tail = NULL;
     }
-void push_front(int val){
+void push_front(int val){//TC : O(1)
     Node* newNode = new Node(val);
     if(head == NULL){
         head = tail = newNode;
@@ -30,7 +30,7 @@ void push_front(int val){
         head = newNode;
     }
 }
-void push_back(int val){
+void push_back(int val){//TC : O(1)
     Node* newNode = new Node(val);
     if(head == NULL){
         head = tail = newNode;
@@ -40,7 +40,7 @@ void push_back(int val){
         tail = newNode; 
     }
 }
-void pop_front(){
+void pop_front(){//TC : O(1)
     if(head == NULL){
         cout<<"LL is empty\n"<<endl;
         return;
@@ -50,7 +50,7 @@ void pop_front(){
     temp->next = NULL;
     delete temp;
 }
-void pop_back(){
+void pop_back(){//TC : O(1)
     if(head == NULL){
         return;
     }
@@ -62,7 +62,7 @@ void pop_back(){
     delete tail;
     tail = temp;
 }
-void printLL(){
+void printLL(){//TC : O(n)
     Node* temp = head;
     while(temp != NULL){
         cout<< temp->data<<" ";

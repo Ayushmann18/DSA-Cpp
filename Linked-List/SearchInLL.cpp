@@ -59,7 +59,7 @@ void printLL(){
     }
     cout<<"NULL"<<endl;
 }
-int Search(int key){
+int Search(int key){//TC : O(n)
     Node* temp = head;
     int idx = 0;
     while(temp != NULL){

@@ -30,7 +30,7 @@ void push_front(int val){
         head = newNode;
     }
 }
-void insert(int val, int pos){
+void insert(int val, int pos){//TC : O(1)
     if(pos < 0){
         cout<<"Invalid position!"<<endl;
         return;
