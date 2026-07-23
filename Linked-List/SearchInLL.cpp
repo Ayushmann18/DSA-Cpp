@@ -59,6 +59,18 @@ void printLL(){
     }
     cout<<"NULL"<<endl;
 }
+int Search(int key){
+    Node* temp = head;
+    int idx = 0;
+    while(temp != NULL){
+        if(temp->data == key){
+            return idx;
+        }
+        temp = temp->next;
+        idx++;
+    }
+    return -1;
+}
 };
 int main() {
     List ll;
@@ -67,5 +79,6 @@ int main() {
     ll.push_front(3);
     ll.insert(4,1);
     ll.printLL();
+    cout<<ll.Search(5)<<endl; 
     return 0;
 }
