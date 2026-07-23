@@ -50,6 +50,18 @@ void pop_front(){
     temp->next = NULL;
     delete temp;
 }
+void pop_back(){
+    if(head == NULL){
+        return;
+    }
+    Node* temp = head;
+    while(temp->next != tail){
+        temp = temp->next;
+    }
+    temp->next = NULL;
+    delete tail;
+    tail = temp;
+}
 void printLL(){
     Node* temp = head;
     while(temp != NULL){
@@ -66,6 +78,8 @@ int main() {
     ll.push_front(3);
     ll.push_back(4);
     ll.pop_front();
+    ll.printLL();
+    ll.pop_back();
     ll.printLL();
     return 0;
 }
