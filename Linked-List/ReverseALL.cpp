@@ -38,3 +38,5 @@ int main() {
     printLL(first);
     return 0;
 }
+//TC : O(n)
+//SC : O(n)
