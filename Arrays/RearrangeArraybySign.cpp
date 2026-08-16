@@ -27,5 +27,5 @@ int main() {
     }
     return 0;
 }
-//time complexity : O(n)
-//Space Complexity : O(n)
+// TC : O(n)
+// SC : O(n)
